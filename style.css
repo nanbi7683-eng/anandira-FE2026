@@ -7,7 +7,7 @@
 :root{
     --bg:#0d1b3a;
     --bg-elevated:#13263b;
-    --font-mono:"JetBrains Mono";
+    --font-mono:"JetBrains Mono", monospace;
     --font-sans:"inter", sans-serif;
     --text:#e8eef2;
     --border:#24374a;
@@ -28,7 +28,8 @@ body{
     font-family: var(--font-sans);
     background-color: var(--bg);
     color: var(--text);
-    line-height: 1.5;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .eyebrow{
@@ -46,6 +47,11 @@ section{
 
 h1, h2, h3, .logo{
     font-family: var(--font-mono);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .navbar {
@@ -72,6 +78,7 @@ h1, h2, h3, .logo{
     font-family: var(--text-mono);
     font-size: 14px;
 }
+
 .nav-list a{
     color: var(--text-muted);
 }
